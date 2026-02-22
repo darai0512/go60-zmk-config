@@ -1,4 +1,43 @@
-# MoErgo Go60 Custom Configuration for ZMK
+![0 Base](./0Base.png)
+![1SymbolNav](./1SymbolNav.png)
+![2Magic](./2Magic.png)
+
+
+# go60 Setup
+## 1. build by actions
+## 2. 電源投入時にブートローダーのマスストレージデバイスモードに入る
+
+https://docs.moergo.com/go60-user-guide/customizing-key-layout/#putting-go60-into-bootloader-for-firmware-loading
+
+![起動時のブートローダ方式](./bootloader-power-up-method.png)
+
+左半分をブートローダーの大容量ストレージデバイスモードにするには:
+
+- 左半分の電源スイッチをオフにします
+- ホストからのUSBケーブルを左半分に接続します
+- 上記の行-列キーを参考に、T3+ C3R3（デフォルトレイアウトでは Ctrl+D ）を押し続けます。
+  - 右半分: T3+ C3R3（デフォルトレイアウトではAlt+K ）を押し続けます。
+- 2つのキーを押しながら、左半分の電源スイッチをオンにします
+
+## 3. Go60左右に新しいZMKファームウェア .uf2 をロードする
+
+https://docs.moergo.com/go60-user-guide/customizing-key-layout/#loading-new-zmk-firmware-onto-your-go60
+
+成功すると、ブートローダーはUSBマスストレージデバイスを表示します。
+
+![GO60RHBOOT.png](./GO60RHBOOT.png)
+
+.UF2ファイルをこの大容量記憶装置にコピーします。成功すると、大容量記憶装置は消えます。
+
+ファームウェア バージョンの変更後、または詳細構成に変更を加えた後は、通常、構成を工場出荷時状態にリセットし、左半分と右半分を再度ペアリングする手順を実行することをお勧めします。
+https://docs.moergo.com/go60-user-guide/troubleshooting/#configuration-factory-reset-and-re-pairing-left-and-right-halves
+
+注記
+
+- 新しいファームウェアをロードせずにブートローダーを終了する必要がある場合は、電源スイッチを使用して Go60 の電源をオフにしてから再度オンにします。
+- UF2ファイルをCURRENT.UF2に名前変更する必要はありません。拡張子が.UF2のファイル名であれば何でも構いません。
+- macOSの最新バージョンでは、UF2ファイル名が長すぎるとファイルのコピーに失敗します。この問題を回避するには、コピー前にファイル名を短く変更してください。 詳しくは、こちらのトラブルシューティングFAQをご覧ください。
+- OSがファイルのコピーに失敗したと報告したにもかかわらず、大容量記憶装置が自動的に閉じられた場合、ファイルのコピーは実際には成功しています。詳しくは、こちらのトラブルシューティングに関するFAQをご覧ください。
 
 ![MoErgo Logo](moergo_logo.png)
 

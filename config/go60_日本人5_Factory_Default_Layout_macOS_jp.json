@@ -6,7 +6,7 @@
   "parent_uuid": "9bc3491d-ef6b-4185-adbf-7ae8b4994398",
   "unlisted": false,
   "date": 1771787916,
-  "creator": "inaaaaaaaaaaaaa",
+  "creator": "",
   "title": "日本人5_Factory_Default_Layout_macOS_jp",
   "notes": "Factory default layout for Go60 (optimized for use with macOS)\n\nThis layout is designed as a low-friction layout for beginners, mostly avoiding the use of hold-taps and other timing-dependent behaviours. Compared to the default layout for Windows, it has more prominent positions for the Command and Option keys, and uses macOS-standard key combinations for the combos on the Numpad layer.\n\nThe layout has 5 layers:\n- Layer 0 (Base Layer): The alphas and numbers and base symbols\n- Layer 1 (Numpad Layer): Layer optimized for number data entry\n- Layer 2 (SymbolNav Layer): Navigation keys and symbol keys accessible via chording. Please note to simplify navigation key combos with ctrl+shift, this layer has added shift and control on the bottom row of the right hand pinky columns\n- Layer 3 (Magic Layer): Access to Go60 control functions such as RGB and Bluetooth\n- Layer 4 (Factory Test Layer): This layer is not used for normal typing; it is only for switch testing\n\nTo switch to Layer 1 (Numpad Layer), you can hold down RH C6R4 to temporarily switch into Layer 1, or double tap to persistently switch into Layer 1. You can single tap RH C6R4 to get back to the Layer 0 (Base Layer).\nTo switch to Layer 2 (SymbolNav Layer), you can hold down LH T1 to temporarily switch into Layer 2, or double tap to persistently switch into Layer 2. You can single tap LH T1 to get back to the Layer 0 (Base Layer).\n\nThe Right Trackpad mouse movement is accelerated 3 times the normal speed in the SymbolNav Layer (i.e. with LH T1 held).",
   "tags": [
@@ -15,7 +15,9 @@
   "custom_defined_behaviors": "",
   "custom_devicetree": "",
   "config_parameters": [],
-  "layout_parameters": {},
+  "layout_parameters": {
+    "cirque_touch_sensitivity": ""
+  },
   "layer_names": [
     "Base",
     "SymbolNav",
@@ -211,7 +213,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "BSLH"
+            "value": "LBKT"
           }
         ]
       },
@@ -307,7 +309,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "SQT"
+            "value": "RET"
           }
         ]
       },
@@ -400,13 +402,10 @@
         ]
       },
       {
-        "value": "&mt",
+        "value": "&kp",
         "params": [
           {
             "value": "RSHFT"
-          },
-          {
-            "value": "RET"
           }
         ]
       },
@@ -451,11 +450,8 @@
         ]
       },
       {
-        "value": "&mt",
+        "value": "&kp",
         "params": [
-          {
-            "value": "RALT"
-          },
           {
             "value": "RBKT"
           }
@@ -465,7 +461,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "BSPC"
+            "value": "SPACE"
           }
         ]
       },
@@ -481,13 +477,15 @@
         ]
       },
       {
-        "value": "&magic"
+        "value": "&magic",
+        "params": []
       },
       {
         "value": "&lt",
         "params": [
           {
-            "value": 1
+            "value": 1,
+            "params": []
           },
           {
             "value": "BSLH"
@@ -593,47 +591,62 @@
         ]
       },
       {
-        "value": "&kp",
+        "value": "&mt",
         "params": [
+          {
+            "value": "F10"
+          },
           {
             "value": "MINUS"
           }
         ]
       },
       {
-        "value": "&kp",
+        "value": "&mt",
         "params": [
+          {
+            "value": "F11"
+          },
           {
             "value": "EQUAL"
           }
         ]
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
         "value": "&kp",
@@ -660,22 +673,28 @@
         ]
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
         "value": "&kp",
@@ -710,65 +729,104 @@
         ]
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
         "value": "&kp",
         "params": [
           {
-            "value": "RET"
+            "value": "SQT"
           }
         ]
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
-      },
-      {
-        "value": "&trans"
-      },
-      {
-        "value": "&trans"
-      },
-      {
-        "value": "&trans"
-      },
-      {
-        "value": "&trans"
-      },
-      {
-        "value": "&trans"
-      },
-      {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
         "value": "&kp",
         "params": [
           {
-            "value": "RSHFT"
+            "value": "BSPC"
           }
         ]
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
+      },
+      {
+        "value": "&trans",
+        "params": []
+      },
+      {
+        "value": "&trans",
+        "params": []
+      },
+      {
+        "value": "&trans",
+        "params": []
+      },
+      {
+        "value": "&trans",
+        "params": []
+      },
+      {
+        "value": "&trans",
+        "params": []
+      },
+      {
+        "value": "&trans",
+        "params": []
+      },
+      {
+        "value": "&trans",
+        "params": []
+      },
+      {
+        "value": "&trans",
+        "params": []
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "RALT"
+          }
+        ]
+      },
+      {
+        "value": "&trans",
+        "params": []
+      },
+      {
+        "value": "&trans",
+        "params": []
       },
       {
         "value": "&kp",
@@ -779,46 +837,16 @@
         ]
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
+        "value": "&trans",
+        "params": []
       },
       {
-        "value": "&trans"
-      },
-      {
-        "value": "&trans"
-      },
-      {
-        "value": "&mt",
-        "params": [
-          {
-            "value": "F12"
-          },
-          {
-            "value": "PSCRN"
-          }
-        ]
-      },
-      {
-        "value": "&trans"
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "F10"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "F11"
-          }
-        ]
+        "value": "&trans",
+        "params": []
       }
     ],
     [
@@ -850,17 +878,13 @@
         "value": "&kp",
         "params": [
           {
-            "value": "C_AL_CONTROL_PANEL"
+            "value": "PSCRN"
           }
         ]
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "C_AC_SEARCH"
-          }
-        ]
+        "value": "&none",
+        "params": []
       },
       {
         "value": "&kp",
@@ -919,7 +943,8 @@
         ]
       },
       {
-        "value": "&bootloader"
+        "value": "&bootloader",
+        "params": []
       },
       {
         "value": "&rgb_ug",
@@ -962,25 +987,32 @@
         ]
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&bootloader"
+        "value": "&bootloader",
+        "params": []
       },
       {
-        "value": "&reset"
+        "value": "&reset",
+        "params": []
       },
       {
         "value": "&rgb_ug",
@@ -1023,58 +1055,76 @@
         ]
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&reset"
+        "value": "&reset",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&bt_0"
+        "value": "&bt_0",
+        "params": []
       },
       {
-        "value": "&bt_1"
+        "value": "&bt_1",
+        "params": []
       },
       {
-        "value": "&bt_2"
+        "value": "&bt_2",
+        "params": []
       },
       {
-        "value": "&bt_3"
+        "value": "&bt_3",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
         "value": "&out",
@@ -1101,13 +1151,16 @@
         ]
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
       },
       {
         "value": "&kp",
@@ -1137,20 +1190,17 @@
         "value": "&kp",
         "params": [
           {
-            "value": "C_SLEEP_MODE"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
             "value": "C_PREV"
           }
         ]
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
       }
     ]
   ],
@@ -1162,14 +1212,14 @@
         {
           "code": "&zip_xy_scaler",
           "params": [
-            3,
-            1
+            11,
+            5
           ]
         }
       ],
       "nodes": [
         {
-          "code": "layer_2",
+          "code": "layer_1",
           "layers": [
             1
           ],
