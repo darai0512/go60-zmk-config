@@ -177,7 +177,9 @@
 };
 
 /* Custom Device-tree */
-
+&mt {
+    tapping-term-ms = <400>;
+};
 
 /* Input Listeners */
 &cirque_rh_listener {
@@ -331,16 +333,7 @@
 
 /* Custom Defined Behaviors */
 / {
-    behaviors {
-        mt400: mod_tap_400 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOD_TAP_400";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <400>;
-            bindings = <&kp>, <&kp>;
-        };
-    };
+
 };
 
 /* Automatically generated macro definitions */
@@ -369,7 +362,7 @@
 
         layer_Base {
             bindings = <
- &kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4  &kp N5                                                                                                             &kp N6     &kp N7     &kp N8    &kp N9    &kp N0  &mt400 BSPC MINUS
+ &kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4  &kp N5                                                                                                             &kp N6     &kp N7     &kp N8    &kp N9    &kp N0  &mt BSPC MINUS
    &kp TAB   &kp Q     &kp W     &kp E      &kp R   &kp T                                                                                                              &kp Y      &kp U      &kp I     &kp O     &kp P        &kp LBKT
  &kp LCTRL   &kp A     &kp S     &kp D      &kp F   &kp G                                                                                                              &kp H      &kp J      &kp K     &kp L  &kp SEMI         &kp RET
  &kp LSHFT   &kp Z     &kp X     &kp C      &kp V   &kp B                                                                                                              &kp N      &kp M  &kp COMMA   &kp DOT  &kp FSLH       &kp RSHFT
