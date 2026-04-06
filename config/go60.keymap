@@ -182,14 +182,14 @@
 /* Input Listeners */
 &cirque_rh_listener {
     input-processors = <&zip_xy_scaler 11 5>;
-    layer_1 {
+    layer_SymbolNav {
         layers = <LAYER_SymbolNav>;
         input-processors = <&zip_xy_scaler 9 1>;
     };
 };
 
 &cirque_lh_listener {
-    input-processors = <&zip_xy_to_scroll_mapper>, <&zip_xy_scaler 11 12>, <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>, <&zip_click_to_right_click_mapper>, <&zip_scroll_scaler 1 8>;
+    input-processors = <&zip_xy_to_scroll_mapper>, <&zip_xy_scaler 11 12>, <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>, <&zip_click_to_right_click_mapper>;
 };
 
 /* System behavior and macros */
@@ -360,12 +360,12 @@
 
         layer_Base {
             bindings = <
- &kp GRAVE  &kp N1    &kp N2    &kp N3           &kp N4  &kp N5                                                                                                             &kp N6     &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
-   &kp TAB   &kp Q     &kp W     &kp E            &kp R   &kp T                                                                                                              &kp Y      &kp U      &kp I     &kp O     &kp P   &kp LBKT
- &kp LCTRL   &kp A     &kp S     &kp D            &kp F   &kp G                                                                                                              &kp H      &kp J      &kp K     &kp L  &kp SEMI    &kp RET
- &kp LSHFT   &kp Z     &kp X     &kp C            &kp V   &kp B                                                                                                              &kp N      &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-                    &kp LALT  &kp LGUI  &mt SPACE SPACE                                                                                                                             &kp SPACE   &kp RGUI  &kp RBKT
-                                                                 &kp SPACE  &lt LAYER_SymbolNav SPACE  &magic LAYER_Magic 0  &kp BSLH  &lt LAYER_SymbolNav EQUAL  &kp BSPC
+ &kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4  &kp N5                                                                                                             &kp N6     &kp N7     &kp N8    &kp N9    &kp N0  &mt BSPC MINUS
+   &kp TAB   &kp Q     &kp W     &kp E      &kp R   &kp T                                                                                                              &kp Y      &kp U      &kp I     &kp O     &kp P        &kp LBKT
+ &kp LCTRL   &kp A     &kp S     &kp D      &kp F   &kp G                                                                                                              &kp H      &kp J      &kp K     &kp L  &kp SEMI         &kp RET
+ &kp LSHFT   &kp Z     &kp X     &kp C      &kp V   &kp B                                                                                                              &kp N      &kp M  &kp COMMA   &kp DOT  &kp FSLH       &kp RSHFT
+                    &kp LALT  &kp LGUI  &kp SPACE                                                                                                                             &kp SPACE   &kp RGUI  &kp RBKT
+                                                           &kp SPACE  &lt LAYER_SymbolNav SPACE  &magic LAYER_Magic 0  &kp EQUAL  &lt LAYER_SymbolNav BSLH  &kp BSPC
             >;
         };
 
