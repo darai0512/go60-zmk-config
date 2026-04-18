@@ -16,7 +16,7 @@
   "custom_devicetree": "&mt {\n    tapping-term-ms = <300>;\n};",
   "config_parameters": [],
   "layout_parameters": {
-    "cirque_touch_sensitivity": ""
+    "cirque_touch_sensitivity": "cirque-lh:high"
   },
   "layer_names": [
     "Base",
@@ -732,8 +732,7 @@
         "value": "&trans"
       },
       {
-        "value": "&trans",
-        "params": []
+        "value": "&trans"
       },
       {
         "value": "&trans"
@@ -1164,54 +1163,30 @@
         {
           "code": "&zip_xy_scaler",
           "params": [
-            11,
-            5
+            5,
+            7
           ]
-        }
-      ],
-      "nodes": [
-        {
-          "code": "layer_1",
-          "layers": [
-            1
-          ],
-          "inputProcessors": [
-            {
-              "code": "&zip_xy_scaler",
-              "params": [
-                9,
-                1
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "code": "&cirque_lh_listener",
-      "inputProcessors": [
+        },
         {
           "code": "&zip_xy_to_scroll_mapper",
           "params": []
         },
         {
-          "code": "&zip_xy_scaler",
-          "params": [
-            11,
-            12
-          ]
-        },
-        {
-          "code": "&zip_xy_transform",
-          "params": [
-            [
-              "INPUT_TRANSFORM_Y_INVERT"
-            ]
-          ]
-        },
-        {
           "code": "&zip_click_to_right_click_mapper",
           "params": []
+        }
+      ],
+      "nodes": []
+    },
+    {
+      "code": "&cirque_lh_listener",
+      "inputProcessors": [
+        {
+          "code": "&zip_xy_scaler",
+          "params": [
+            5,
+            2
+          ]
         }
       ]
     }

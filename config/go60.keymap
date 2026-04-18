@@ -183,15 +183,11 @@
 
 /* Input Listeners */
 &cirque_rh_listener {
-    input-processors = <&zip_xy_scaler 11 5>;
-    layer_SymbolNav {
-        layers = <LAYER_SymbolNav>;
-        input-processors = <&zip_xy_scaler 9 1>;
-    };
+    input-processors = <&zip_xy_scaler 5 7>, <&zip_xy_to_scroll_mapper>, <&zip_click_to_right_click_mapper>;
 };
 
 &cirque_lh_listener {
-    input-processors = <&zip_xy_to_scroll_mapper>, <&zip_xy_scaler 11 12>, <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>, <&zip_click_to_right_click_mapper>;
+    input-processors = <&zip_xy_scaler 5 2>;
 };
 
 /* System behavior and macros */
