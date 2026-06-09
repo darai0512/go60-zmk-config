@@ -13,7 +13,7 @@
     "mac"
   ],
   "custom_defined_behaviors": "",
-  "custom_devicetree": "&mt {\n    tapping-term-ms = <300>;\n};",
+  "custom_devicetree": "&mt {\n    tapping-term-ms = <350>;\n};\n&lt {\n    tapping-term-ms = <350>;\n};",
   "config_parameters": [],
   "layout_parameters": {
     "cirque_touch_sensitivity": "cirque-lh:high"
@@ -114,11 +114,8 @@
         ]
       },
       {
-        "value": "&mt",
+        "value": "&kp",
         "params": [
-          {
-            "value": "BSPC"
-          },
           {
             "value": "MINUS"
           }
@@ -405,18 +402,13 @@
         ]
       },
       {
-        "value": "&kp",
+        "value": "&mt",
         "params": [
+          {
+            "value": "RSHFT"
+          },
           {
             "value": "SQT"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "LALT"
           }
         ]
       },
@@ -432,7 +424,15 @@
         "value": "&kp",
         "params": [
           {
-            "value": "SPACE"
+            "value": "LGUI"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LALT"
           }
         ]
       },
@@ -603,7 +603,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "MINUS"
+            "value": "BSPC"
           }
         ]
       },
@@ -773,12 +773,8 @@
         "value": "&trans"
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "RSHFT"
-          }
-        ]
+        "value": "&trans",
+        "params": []
       },
       {
         "value": "&trans"
@@ -1175,8 +1171,7 @@
           "code": "&zip_click_to_right_click_mapper",
           "params": []
         }
-      ],
-      "nodes": []
+      ]
     },
     {
       "code": "&cirque_lh_listener",
