@@ -611,7 +611,12 @@
         "value": "&trans"
       },
       {
-        "value": "&trans"
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LEFT"
+          }
+        ]
       },
       {
         "value": "&kp",
@@ -625,7 +630,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "RET"
+            "value": "END"
           }
         ]
       },
@@ -670,7 +675,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "LEFT"
+            "value": "HOME"
           }
         ]
       },
@@ -773,11 +778,15 @@
         "value": "&trans"
       },
       {
-        "value": "&trans",
-        "params": []
+        "value": "&trans"
       },
       {
-        "value": "&trans"
+        "value": "&kp",
+        "params": [
+          {
+            "value": "RET"
+          }
+        ]
       },
       {
         "value": "&trans"

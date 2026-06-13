@@ -373,10 +373,10 @@
         layer_SymbolNav {
             bindings = <
  &kp ESC    &kp F1    &kp F2     &kp F3  &kp F4    &kp F5                                                      &kp F6    &kp F7  &kp F8     &kp F9   &kp F10  &kp BSPC
-  &trans    &trans    &kp UP    &kp RET  &trans    &trans                                                      &trans    &trans  &trans     &trans  &kp RBKT  &kp BSLH
-  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &trans                                                    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT    &trans    &trans
+  &trans  &kp LEFT    &kp UP    &kp END  &trans    &trans                                                      &trans    &trans  &trans     &trans  &kp RBKT  &kp BSLH
+  &trans  &kp HOME  &kp DOWN  &kp RIGHT  &trans    &trans                                                    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT    &trans    &trans
   &trans    &trans    &trans     &trans  &trans  &kp BSPC                                                      &trans    &trans  &trans     &trans    &trans    &trans
-                      &trans     &trans  &trans                                                                          &trans  &trans   &kp RALT
+                     &kp RET     &trans  &trans                                                                          &trans  &trans   &kp RALT
                                                            &trans  &trans  &kp F12  &kp F11  &trans  &trans
             >;
         };
